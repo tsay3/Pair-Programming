@@ -1,0 +1,221 @@
+.Editor {
+    background: linear-gradient(45deg, #7e079b 10%, #201665 50%, #0d7298 90%);
+    min-height: 100vh;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.code-box {
+    /* margin-top: 1px; */
+    margin-bottom: 20px;
+    height: 60vh;
+    width: 980px;
+    justify-items: center;
+    resize: none;
+    background-color: rgb(121, 121, 121, 60%);
+    color: white;
+    font-size: 20px;
+}
+
+.Editor-Header {
+  /*background-color: #85cfef;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.BARCON {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    display: block;
+    
+  }
+  
+  .menuBar{
+    width: 100%;
+    background-color: black;
+    height: 170px;
+    opacity: 60%;
+    top: 0%;
+    display: block;
+    position: absolute;
+  }
+
+  .shape2 {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #7f58af;
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    animation: rotate 5s linear infinite;
+    opacity: 0.7;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .logo2 {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 4px solid #7f58af;
+  }
+  
+  .logo2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: #7f58af;
+    border-radius: 50%;
+  }
+  
+  .logo2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 60px;
+    height: 8px;
+    background-color: #7f58af;
+    border-radius: 5px;
+  }
+  
+  .shape2:nth-child(2) {
+    background-color: #ff5c00;
+    animation-delay: 1s;
+  }
+  
+  .shape2:nth-child(3) {
+    background-color: #489cda;
+    animation-delay: 2s;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(180deg) scale(0.8);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) scale(1);
+    }
+  }
+
+  .text-glow {
+    top: 7%;
+    position: absolute;
+    left: 1%;
+    color: #ffffff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6, 0 0 100px #ff4da6, 0 0 150px #ff4da6; /* pink glow */
+  }
+
+.Editor-Content {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    left: 35%;
+}
+
+.Editor-Main {
+    
+}
+
+.Editor-Top-Menu {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    position: fixed fixed;
+    max-width: 500px;
+}
+
+.Editor-State-Info {
+
+}
+
+.Request-Field {
+    align-items: left;
+    min-height: 7vh;
+}
+
+#main-panel {
+    
+}
+
+.Editor-sidebar {
+    
+}
+
+.Editor-explorer {
+    display: block;
+    position: absolute;
+    left: 5%;
+    top: 0%;
+}
+
+.swap-C {
+    display: block;
+    position: absolute;
+    right: 43%;
+    top: 7%;
+
+    text-align: center;
+    line-height: 1px;
+    font-size: 15px;
+    border-radius: 36px;
+    box-shadow: 10px 10px black;
+    transition-duration: 0.2s;
+    background-color: #4c0d76;
+}
+
+button.menu-A {
+    background-color: rgb(0, 0, 0, 20%);
+    border-radius: 0px;
+    height: 170px;
+    box-shadow: 0px 0px black;
+    margin: 0px 0px;
+    border-color: rgb(82, 82, 82, 30%);
+    border-style: solid;
+  }
+
+  button.menu-B {
+    background-color: rgb(0, 0, 0, 20%);
+    border-radius: 0px;
+    height: 170px;
+    box-shadow: 0px 0px black;
+    margin: 0px 0px;
+    border-bottom: 5px solid rgb(82, 82, 82, 30%);
+  }
+
+  button.menu-C {
+    background-color: rgb(0, 0, 0, 20%);
+    border-radius: 0px;
+    height: 170px;
+    box-shadow: 0px 0px black;
+    margin: 0px 0px;
+    border-color: rgb(82, 82, 82, 30%);
+    border-style: solid;
+  }
+
+  button.LEAVE-B {
+    background-color: #ff5c00;
+  }

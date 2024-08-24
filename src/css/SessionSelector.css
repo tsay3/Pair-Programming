@@ -1,0 +1,52 @@
+
+.Selector-Main {
+    background: linear-gradient(45deg, #7e079b 10%, #201665 50%, #0d7298 90%);;
+    position:  fixed;
+    top:0px;
+    left: 0px;
+    right:0px;
+    bottom:0px;
+    margin: auto;
+    font-size: 20px;
+    color: rgb(0, 195, 255);
+    text-align: center;
+    opacity: 1;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+
+.selCon {
+    border-radius: 25px;
+    background-color: rgb(68, 68, 68);
+    width: 350px;
+    height: 200px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin: 11% 45%;
+    position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.id-input {
+    width: 300px;
+    /* opacity: 50%; */
+    background-color: rgb(98, 0, 110, 50%);
+    padding: 10px 10px;
+    /* padding-bottom: 0px; */
+    margin-bottom: 10px;
+    color: #ff5c00;
+    font-weight: bold;
+}
+
+button.joinB {
+  background-color: #489cda;
+}
+
+button.backB {
+    background-color: #4c0d76;
+  }

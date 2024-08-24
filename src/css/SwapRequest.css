@@ -1,0 +1,38 @@
+
+.Swap-Request {
+    background: #0008;
+    position: absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    margin: auto;
+    font-size: 20px;
+    color: #f00;
+    opacity: 1;
+    z-index: 1000;
+    
+}
+
+.Swap-Container {
+    opacity: 1;
+    display: block;
+    position: absolute;
+    left: 44%;
+    /*align-content: center;
+    */
+}
+
+.Request-Buttons-Container {
+    display: inline-block; 
+}
+
+.Allow-Button {
+    background: #489cda;
+    color: #fff;
+}
+
+.Deny-Button {
+    background: #4c0d76;
+    color: #fff;
+}
