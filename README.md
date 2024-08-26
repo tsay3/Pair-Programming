@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Pair Programming
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This (incomplete) application is intended to implement pair programming sessions across multiple client windows. A client (the host) can host a session by inputting a new session ID, and are taken to a window where they can enter code. Another client (the guest) can then be joined a host's session by inputting the same session ID. The guest cannot edit code, but can view the host's code in real time. Both the guest and the host can request to swap roles; if the other consents, the guest gains the host's abilities to edit code, while the host loses theirs but can watch the guest edit in real time.
 
-## Available Scripts
+This implementation was built by Brandon Gonzalez, Timothy Kazarinoff, Rowan Mundrawala, and Thomas Say.
 
-In the project directory, you can run:
+# Getting Started
 
-### `npm start`
+Download the code to a local repository, and type `npm start'. This starts the server and lets you view the webpage at https://localhost:3000 .
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Thomas Say's contributions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Thomas Say fully wrote the following files:
+* App.js
+* /js/WindowManager.js
+* /js/WelcomeScreen.js
+* /js/Editor.js
+* /js/SessionSelector.js
+* /js/SwapRequest.js
+* /js/viewer.js
+* /js/HostSelector.js
+* /css/WindowManager.css
 
-### `npm test`
+Thomas Say also partially wrote the following files:
+* /css/WelcomeScreen.css (lines 1-144)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Known bugs
+The application was never fully finished. Among the serious issues:
+* Code written in the host's window will not appear in the guest's.
+* Code written in the host's window is not saved in a database and reloaded across multiple sessions.
+* Roles between host and guest do not switch upon selecting.
+* There are no IDE features for any language such as smart formatting or autocomplete.
